@@ -1,0 +1,13 @@
+[package]
+name = "orbit"
+version = "0.1.0"
+edition = "2024"
+license = "GPL-3.0-or-later"
+description = "A gravitational orbital-survival sandbox"
+
+[dependencies]
+macroquad = "0.4.14"
+
+[profile.release]
+lto = "thin"
+strip = true
